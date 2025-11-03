@@ -1,0 +1,88 @@
+Maternal education is one of the strongest, most consistent predictors of child health in low- and middle-income settings. Educated mothers are more likely to use antenatal care, seek skilled birth attendance, adopt immunisation, and practise better newborn care and hygiene. Fertility, often proxied by the average number of children ever born, can influence infant survival through biological (short birth intervals, maternal depletion) and resource dilution (household resources per child) channels. Studying these two relationships together helps clarify whether improving female education reduces infant mortality largely by 
+
+\begin{enumerate}
+    \item changing health behaviours directly,
+    \item reducing fertility and spacing births,
+    \item both.
+\end{enumerate}
+
+\section{Research Questions}
+\begin{itemize}
+    \item What is the association between mother’s education and infant mortality in Mizoram and Himachal Pradesh, after controlling for confounders (wealth, residence, maternal age, parity, and access to health services)?
+    \item How does the average number of children born to a mother relate to infant mortality, and to what extent does maternal education operate through fertility (mediator) to affect infant survival?
+    \item Are the strength and pathways of these associations different between Mizoram and Himachal Pradesh?
+\end{itemize}
+
+\section{Hypothesis}
+
+\subsection{Number of children ever born in relation to education level for each individual}
+\paragraph{$H_0$ hypothesis (null)} The mean number of children ever born does not differ across education levels.
+
+\paragraph{$H_1$ hypothesis (alternate)} The mean number of children ever born differs significantly with education level.
+\newpage
+\subsection{Sanitation access in relation ot education level for each individual}
+\paragraph{$H_0$ hypothesis (null)} There is no significant association between mother's education level and access to improved sanitation facilities.
+\paragraph{$H_1$ hypothesis (alternate)} Higher mother's education level is significantly associated with increased access to improved sanitation facilities.
+
+\section{Data and Methodology}
+\subsection{Data Source}
+Data were drawn from NFHS-5 (2019--21), specifically from the state-level subsets for Himachal Pradesh and Mizoram. The NFHS provides representative information on fertility, child health, and family welfare indicators. The present analysis uses a child-level dataset derived from these subsets.
+
+\subsection{Variable Construction}
+The key variables used in the analysis are defined as follows:
+\begin{itemize}
+    \item \textbf{Mother's Education Level ($E$):} Categorical variable with three levels - no education, primary education, and secondary or higher education.
+    \item \textbf{Infant Mortality ($IMR$):} Binary variable indicating whether the child died before reaching one year of age (1 = died, 0 = alive).
+    \item \textbf{Average Number of Children Born ($C$):} Count variable representing the total number of children ever born to the mother.
+    \item \textbf{Access to Improved Sanitation ($S$):} Binary variable defined as:
+    \[
+    S_i = \begin{cases}
+    1, & \text{if household has access to improved sanitation facilities (toilet with water, septic tank, etc.)} \\
+    0, & \text{otherwise.}
+    \end{cases}
+    \]
+\end{itemize}
+
+\section{Results}
+\subsection{Average Number of Children Born vs Education Level of Individuals}
+Performed a Chi-square test of independence separately for Mizoram and Himachal Pradesh. Visualized associations using stacked box plots for both states.
+
+The following gives the box plot and the p values and F statistics for the two states:
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.5\textwidth]{Images/ANOVA Analysis.png}
+\caption{Box plot and ANOVA results for average number of children born vs education level} 
+\label{fig:boxplot}
+\end{figure}
+
+\paragraph{Verdict} The box plots indicate a clear negative association between mother's education level and the average number of children ever born in both Mizoram and Himachal Pradesh. As education level increases from no education to secondary or higher education, the median number of children born decreases significantly. The ANOVA results confirm this observation, with p-values less than 0.05 for both states, indicating that the differences in mean number of children born across education levels are statistically significant. This suggests that higher maternal education is associated with lower fertility rates, which may contribute to improved infant survival outcomes.
+
+In Himachal Pradesh, education seems more tightly linked to reproductive behavior — possibly due to stronger institutional and healthcare outreach. In Mizoram, though the trend is similar, cultural and structural factors may moderate the impact slightly. Hence, state-level policy tailoring is essential — Mizoram may need more community-level programs to translate education into family planning outcomes
+
+\subsection{Sanitation Access vs Education Level of Individuals}
+Performed a Chi-square test of independence separately for Mizoram and Himachal Pradesh Visualized associations using box plots and heatmaps for both states.
+
+The following gives the contingency table and the chi squared statistics for the two states:
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.5\textwidth]{Images/TWo state analysis.png}
+\caption{contingency table}
+\label{fig:anova}
+\end{figure}
+
+The heatmap of the distribution of sanitation access across education levels for both states is shown below:
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{Images/Plots.png}
+\caption{Heatmap of sanitation access vs education level}
+\label{fig:sanitation_heatmap}
+\end{figure}
+The result of the test is given by the following table:
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=\textwidth]{Images/state by sytate analysis.png}
+\caption{Chi squared test results for both states}
+\label{fig:chi_squared}
+\end{figure}
+
+\paragraph{Verdict}The stacked bar charts clearly show that as education level increases, the proportion of households with adequate sanitation access increases notably. Lower education groups have visibly higher shares of poor sanitation facilities. Himachal Pradesh shows a stronger gradient — meaning the gap between low and high education groups is more pronounced than in Mizoram. Education influences sanitation behavior — better-educated individuals are more aware of hygiene, disease prevention, and sanitation benefits. This reflects the broader social development linkage — education translates into better health and environmental practices. The state-level comparison highlights that even with similar education levels, outcomes differ — implying that policy infrastructure and local awareness programs matter. Himachal Pradesh's stronger association suggests that its literacy programs and health infrastructure are effectively converting educational gains into improved sanitation outcomes. Mizoram, while performing well, may require more targeted hygiene education or rural sanitation outreach to fully realize the benefits of education on health behavior.

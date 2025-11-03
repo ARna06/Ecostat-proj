@@ -1,0 +1,49 @@
+\contentsline {part}{\numberline {I}Preliminary Investigations}{9}{part.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background and Rationale}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}State Profiles}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Mizoram}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Himachal Pradesh}{11}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Key Thematic Areas of Study}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Specific Data Snapshots}{12}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Hypothesis}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hypothesis Statements}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Null and Alternative Hypotheses}{13}{section.2.2}%
+\contentsline {paragraph}{Model / Test:}{13}{paragraph*.4}%
+\contentsline {paragraph}{Model / Test:}{13}{paragraph*.5}%
+\contentsline {paragraph}{Model / Test:}{14}{paragraph*.6}%
+\contentsline {paragraph}{Model / Test:}{14}{paragraph*.7}%
+\contentsline {part}{\numberline {II}Hypothesis Testing and Results}{17}{part.2}%
+\contentsline {chapter}{\numberline {3}Wealth, Residence, and Maternal Age as Determinants of Infant Mortality}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Objectives}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hypotheses}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Data and Methodology}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Data Source}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Variable Construction}{20}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Analytical Approach}{20}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Results}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Wealth and Infant Mortality}{20}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Residence Type}{21}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Maternal Age and Rare-Event Adjustment}{21}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Inter-State Comparison and Interpretation}{21}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Conclusion}{22}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Mother's Education, Fertility and Sanitation Access}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Research Questions}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Hypothesis}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Number of children ever born in relation to education level for each individual}{23}{subsection.4.2.1}%
+\contentsline {paragraph}{$H_0$ hypothesis (null)}{23}{paragraph*.8}%
+\contentsline {paragraph}{$H_1$ hypothesis (alternate)}{23}{paragraph*.9}%
+\contentsline {subsection}{\numberline {4.2.2}Sanitation access in relation ot education level for each individual}{24}{subsection.4.2.2}%
+\contentsline {paragraph}{$H_0$ hypothesis (null)}{24}{paragraph*.10}%
+\contentsline {paragraph}{$H_1$ hypothesis (alternate)}{24}{paragraph*.11}%
+\contentsline {section}{\numberline {4.3}Data and Methodology}{24}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Data Source}{24}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Variable Construction}{24}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Results}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Average Number of Children Born vs Education Level of Individuals}{24}{subsection.4.4.1}%
+\contentsline {paragraph}{Verdict}{25}{paragraph*.12}%
+\contentsline {subsection}{\numberline {4.4.2}Sanitation Access vs Education Level of Individuals}{25}{subsection.4.4.2}%
+\contentsline {paragraph}{Verdict}{25}{paragraph*.13}%
+\contentsline {chapter}{Appendices}{27}{section*.14}%
+\contentsline {chapter}{\numberline {A}Acknowledgements}{27}{appendix.1.A}%
+\contentsfinish 

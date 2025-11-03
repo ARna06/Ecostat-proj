@@ -1,0 +1,136 @@
+\section{Hypothesis Statements}
+
+\section{Null and Alternative Hypotheses}
+
+Let $IMR$ denote the infant mortality outcome (binary at child level, or rate per 1000 live births at aggregate level), $W$ the household wealth index (continuous or quintile), $A$ the mother's age (years or age group), $R$ the residence type (urban/rural), $E$ the mother's education level (years of schooling or categorical), and $C$ the number of children ever born (or average children per woman). Subscripts $MZ$ and $HP$ denote Mizoram and Himachal Pradesh respectively.
+
+\subsection*{Test 1: Infant mortality vs Wealth index}
+
+\paragraph{Model / Test:} Regress $IMR$ on $W$ (logistic regression for child-level binary IMR, or linear regression for aggregate IMR):
+where $\mathbf{X}$ are controls (e.g., mother's age, education, residence).
+
+\begin{itemize}
+  \item \textbf{Mizoram}
+    \begin{itemize}
+      \item $H_{0}^{(MZ)}:\ \beta_W^{(MZ)} = 0$ (wealth index has no association with infant mortality in Mizoram).
+      \item $H_{A}^{(MZ)}:\ \beta_W^{(MZ)} < 0$ (higher wealth is associated with lower infant mortality in Mizoram).
+    \end{itemize}
+  \item \textbf{Himachal Pradesh}
+    \begin{itemize}
+      \item $H_{0}^{(HP)}:\ \beta_W^{(HP)} = 0$.
+      \item $H_{A}^{(HP)}:\ \beta_W^{(HP)} < 0$.
+    \end{itemize}
+\end{itemize}
+
+\noindent\textit{Rationale:} Household wealth improves access to nutrition, healthcare and sanitation; hence a negative association is expected. 
+
+\subsection*{Test 2: Infant mortality vs Mother's age}
+
+\paragraph{Model / Test:} Compare IMR across maternal age categories (e.g., $<20$, $20$--$34$, $\ge 35$). Use logistic regression with age dummies or two-sample tests for proportions.
+
+\begin{itemize}
+  \item \textbf{Mizoram}
+    \begin{itemize}
+      \item $H_{0}^{(MZ)}:$ IMR is the same across maternal age groups (no difference between $<20$ and $20$--$34$).
+      \item $H_{A}^{(MZ)}:$ IMR among mothers $<20$ is greater than IMR among mothers aged $20$--$34$.
+    \end{itemize}
+  \item \textbf{Himachal Pradesh}
+    \begin{itemize}
+      \item $H_{0}^{(HP)}:$ IMR is the same across maternal age groups.
+      \item $H_{A}^{(HP)}:$ IMR among mothers $<20$ is greater than IMR among mothers aged $20$--$34$.
+    \end{itemize}
+\end{itemize}
+
+\noindent\textit{Rationale:} Very young mothers face higher biological and socio-economic risks (e.g., poorer antenatal care), so infants of teen mothers often show worse outcomes. Test can be one-sided if theory is directional; include controls (education, wealth).
+
+\subsection*{Test 3: Residence type vs Infant mortality}
+
+\paragraph{Model / Test:} Compare proportions of infant deaths between rural and urban (Chi-square test of independence or logistic regression with residence dummy).
+
+\begin{itemize}
+  \item \textbf{Mizoram}
+    \begin{itemize}
+      \item $H_{0}^{(MZ)}:$ $p_{\text{rural}}^{(MZ)} = p_{\text{urban}}^{(MZ)}$ (no difference in infant mortality proportions).
+      \item $H_{A}^{(MZ)}:$ $p_{\text{rural}}^{(MZ)} > p_{\text{urban}}^{(MZ)}$ (rural IMR higher than urban).
+    \end{itemize}
+  \item \textbf{Himachal Pradesh}
+    \begin{itemize}
+      \item $H_{0}^{(HP)}:$ $p_{\text{rural}}^{(HP)} = p_{\text{urban}}^{(HP)}$.
+      \item $H_{A}^{(HP)}:$ $p_{\text{rural}}^{(HP)} > p_{\text{urban}}^{(HP)}$.
+    \end{itemize}
+\end{itemize}
+
+\noindent\textit{Rationale:} Rural areas typically have lower health service access and worse infrastructure; therefore rural IMR is expected to be higher. For mountainous states, "rural" may include very remote habitations—interpretation should consider accessibility measures.
+
+\subsection*{Test 4: Mother's Education vs Sanitation Access}
+
+Let:
+\begin{itemize}
+    \item $E_i$ = Mother's education level for household $i$ (measured in completed years of schooling or categorical levels such as no schooling, primary, secondary, higher).
+    \item $S_i$ = Sanitation access for household $i$, where 
+    \[
+    S_i = 
+    \begin{cases}
+    1, & \text{if household has access to improved sanitation facilities (toilet with water, septic tank, etc.)} \\
+    0, & \text{otherwise.}
+    \end{cases}
+    \]
+\end{itemize}
+
+We test whether an increase in maternal education ($E_i$) is associated with an increase in the probability of having improved sanitation access ($S_i$).
+
+%----------------------------------------------
+\begin{itemize}
+  \item \textbf{Mizoram}
+  \begin{itemize}
+    \item $
+H_{0}^{MZ}: \beta_{E}^{MZ} = 0 \quad \Rightarrow \quad E_i \text{ has no significant effect on sanitation access } (S_i) \text{ in Mizoram.}
+$
+    \item $
+H_{1}^{MZ}: \beta_{E}^{MZ} > 0 \quad \Rightarrow \quad \text{Higher } E_i \text{ increases the likelihood of improved sanitation } S_i \text{ in Mizoram.}
+$
+  \end{itemize}
+  \item \textbf{Himachal Pradesh}
+  \begin{itemize}
+    \item $
+H_{0}^{HP}: \beta_{E}^{HP} = 0 \quad \Rightarrow \quad E_i \text{ has no significant effect on sanitation access } (S_i) \text{ in Himachal Pradesh.}
+$
+    \item $
+H_{1}^{HP}: \beta_{E}^{HP} > 0 \quad \Rightarrow \quad \text{Higher } E_i \text{ increases the likelihood of improved sanitation } S_i \text{ in Himachal Pradesh.}
+$
+  \end{itemize}
+\end{itemize}   
+
+
+%----------------------------------------------
+\textit{Rationale:}  
+Educated mothers are more aware of hygiene, disease prevention, and government sanitation schemes (e.g., Swachh Bharat Mission). Education also improves socio-economic status and decision-making power within households. Therefore, higher maternal education is expected to positively influence access to and use of improved sanitation facilities.
+
+
+\subsection*{Test 5: Average number of children born vs Women's education}
+
+\paragraph{Model / Test:} Test for a negative association between women's education level $E$ and fertility $C$ (using ANOVA across education categories).
+
+\begin{itemize}
+  \item \textbf{Mizoram}
+    \begin{itemize}
+      \item $H_{0}^{(MZ)}:$ $\mathbb{E}[C|E=\text{low}] = \mathbb{E}[C|E=\text{medium}] = \mathbb{E}[C|E=\text{high}]$ (no difference in mean children across education levels).
+      \item $H_{A}^{(MZ)}:$ $\mathbb{E}[C|E=\text{low}] > \mathbb{E}[C|E=\text{medium}] > \mathbb{E}[C|E=\text{high}]$ (higher education associated with fewer children; i.e., a negative trend).
+    \end{itemize}
+  \item \textbf{Himachal Pradesh}
+    \begin{itemize}
+      \item $H_{0}^{(HP)}:$ $\mathbb{E}[C|E=\text{levels}]$ equal across education levels.
+      \item $H_{A}^{(HP)}:$ $\mathbb{E}[C|E]$ declines with increasing education (negative association / monotonic trend).
+    \end{itemize}
+\end{itemize}
+
+\noindent\textit{Rationale:} Education increases women's labour market opportunities and contraceptive knowledge/use, and tends to delay marriage and first birth — all factors that lower completed fertility.
+
+\subsection*{Notes on testing strategy and controls}
+
+\begin{itemize}
+  \item Prefer regression frameworks (logistic for binary child-level IMR, count models for fertility) with robust standard errors and relevant controls (wealth, residence, maternal age, parity, access to health facilities) to estimate partial associations.
+  \item Where hypotheses are directional (expecting a negative association), one-sided tests may be used — but two-sided tests are more conservative and commonly reported.
+  \item For group comparisons (age groups, education categories), supplement regression estimates with simple descriptive statistics (means, proportions) and visualisations (boxplots, bar charts).
+  \item Always report effect sizes (odds ratios, marginal effects, differences in means) with confidence intervals, not just $p$-values.
+\end{itemize}

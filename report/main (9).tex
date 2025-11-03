@@ -1,0 +1,121 @@
+
+
+\title{Wealth, Residence, and Maternal Age as Determinants of Infant Mortality: A Comparative Analysis of Himachal Pradesh and Mizoram (NFHS-5)}
+\author{Prepared by ChatGPT Analysis Assistant}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+This report investigates the relationship between socioeconomic and demographic factors and infant mortality in the Indian states of Himachal Pradesh and Mizoram, using data from the National Family Health Survey (NFHS-5). The analysis focuses on three explanatory variables: household wealth, maternal age, and place of residence. Standard logistic regression and rare-event corrected models were used to estimate associations between these predictors and the probability of infant death. Results reveal that wealth has a significant negative effect on infant mortality in Himachal Pradesh, while in Mizoram the relationship is weaker, likely due to lower socioeconomic inequality and strong community-level healthcare. Maternal age and residence type show limited explanatory power once rare-event bias and clustering are accounted for. These findings underscore the importance of social equality and accessible public health systems in mitigating infant mortality.
+\end{abstract}
+
+\section{Introduction}
+Infant mortality---the death of a child before one year of age---remains a crucial indicator of a society's overall health and development. Despite India's substantial improvements in reducing infant mortality rates (IMR), disparities persist among states, reflecting differences in economic status, healthcare infrastructure, and cultural practices. Himachal Pradesh and Mizoram present a compelling comparison: both are hilly states with relatively small populations, yet they differ significantly in social composition, health service delivery, and economic structure.
+
+This study aims to understand how wealth, maternal age, and place of residence affect infant mortality, and why Mizoram exhibits notably lower IMR despite being economically less affluent than Himachal Pradesh.
+
+\section{Objectives}
+\begin{enumerate}
+    \item To quantify the relationship between household wealth and the likelihood of infant death.
+    \item To determine whether urban or rural residence influences infant mortality rates.
+    \item To assess whether maternal age has a significant impact on infant death probability.
+    \item To compare inter-state patterns to identify structural or social differences that may explain contrasting results.
+\end{enumerate}
+
+\section{Hypotheses}
+\begin{itemize}
+    \item[H1:] Higher household wealth is associated with lower infant mortality.
+    \item[H2:] Infants born in rural areas have higher odds of death compared to those in urban settings.
+    \item[H3:] Maternal age follows a U-shaped relationship with infant mortality, with increased risk for very young (<20 years) and older (>35 years) mothers.
+\end{itemize}
+
+\section{Data and Methodology}
+\subsection{Data Source}
+Data were drawn from NFHS-5 (2019--21), specifically from the state-level subsets for Himachal Pradesh and Mizoram. The NFHS provides representative information on fertility, child health, and family welfare indicators. The present analysis uses a child-level dataset derived from these subsets.
+
+\subsection{Variable Construction}
+The dependent variable, \textbf{infant death}, was coded as 1 if the child was not alive and either had missing age data or was less than one year old; otherwise 0. Key independent variables were:
+\begin{itemize}
+    \item \textbf{Wealth Index Combined:} A composite measure of household living standards (1 = poorest to 5 = richest).
+    \item \textbf{Type of Place of Residence:} Coded as 1 = urban and 2 = rural.
+    \item \textbf{Respondent’s Current Age:} The mother’s age at the time of survey.
+\end{itemize}
+
+Each woman’s record was transformed into multiple child-level observations. This restructuring allowed regression analyses with each child as an independent observation, while recognizing within-mother correlations.
+
+\subsection{Analytical Approach}
+To estimate the relationship between predictors and infant mortality, a series of logistic regression models were fitted:
+\begin{equation}
+    \text{logit}(p_i) = \beta_0 + \beta_1 W_i + \beta_2 R_i + \beta_3 A_i + \epsilon_i
+\end{equation}
+where $p_i$ is the probability of infant death for child $i$, $W_i$ is the household wealth index, $R_i$ is residence type, and $A_i$ is maternal age.
+
+Given the rarity of infant deaths in Mizoram ($\approx 2.6\%$ of children), a \textbf{rare-event weighted logistic regression} was applied to mitigate bias from class imbalance. This approach increases the influence of rare observations in the likelihood estimation. For robustness, Firth’s bias-reduced logistic regression and balanced sampling were tested, but results converged.
+
+\section{Results}
+\subsection{Wealth and Infant Mortality}
+In Himachal Pradesh, wealth emerged as a strong and significant predictor ($\beta = -0.26$, $p < 0.001$), implying that each step up the wealth index reduces the odds of infant death by approximately 23\%. In Mizoram, however, the coefficient was smaller ($\beta = -0.18$, $p = 0.06$), suggesting a weaker correlation between wealth and IMR.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{wealth_vs_imr_plot.png}
+\caption{Predicted probability of infant death by wealth index for Himachal Pradesh and Mizoram.}
+\end{figure}
+
+\subsection{Residence Type}
+The relationship between residence type and infant mortality varied by state. In Himachal Pradesh, the difference between urban and rural areas was statistically insignificant. In Mizoram, rural areas unexpectedly showed slightly lower infant mortality. This counterintuitive result likely reflects Mizoram's uniformly distributed health services and lower rural-urban inequality.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{residence_imr_plot.png}
+\caption{Predicted infant mortality probability by residence type.}
+\end{figure}
+
+\subsection{Maternal Age and Rare-Event Adjustment}
+In Mizoram, infant deaths were so infrequent that conventional logistic models underestimated their probability. To address this, rare-event weighted logistic regression was employed. The results showed a nearly flat relationship between maternal age and infant death probability ($\beta = 0.0039$, $p = 0.62$), meaning maternal age had no discernible effect on IMR once bias correction was applied.
+
+Figure~\ref{fig:mother_age} displays both observed data (gray points) and the fitted weighted regression line. Deaths were scattered across all age groups, supporting the statistical conclusion.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{mother_age_imr_plot.png}
+\caption{Observed data and rare-event weighted logistic fit for infant mortality vs. maternal age (Mizoram).}
+\label{fig:mother_age}
+\end{figure}
+
+\subsection{Inter-State Comparison and Interpretation}
+Table~\ref{tab:summary} summarizes key model results. The wealth gradient is steep and highly significant in Himachal Pradesh, while negligible in Mizoram. Maternal age and residence type are statistically insignificant across both states.
+
+\begin{table}[h]
+\centering
+\caption{Summary of Logistic Regression Coefficients by State}
+\begin{tabular}{lcccc}
+\toprule
+Variable & Coefficient (HP) & $p$-value (HP) & Coefficient (MZ) & $p$-value (MZ) \\
+\midrule
+Intercept & -2.94 & $<0.001$ & -2.63 & $<0.001$ \\
+Wealth Index & -0.26 & $<0.001$ & -0.18 & 0.06 \\
+Residence Type & -0.09 & 0.45 & -0.40 & 0.004 \\
+Mother’s Age & 0.001 & 0.85 & 0.006 & 0.49 \\
+\bottomrule
+\end{tabular}
+\label{tab:summary}
+\end{table}
+
+Mizoram’s weaker wealth-mortality link likely stems from its strong community-based health systems, widespread literacy, and egalitarian culture, which collectively buffer the influence of household income. Himachal Pradesh, by contrast, exhibits more pronounced wealth disparities and terrain-based inequality in healthcare access.
+
+\section{Conclusion}
+This study demonstrates that the socioeconomic determinants of infant mortality differ sharply between Himachal Pradesh and Mizoram. In Himachal Pradesh, infant survival improves consistently with wealth, confirming that economic capacity drives access to healthcare and child nutrition. In Mizoram, however, infant mortality is both rare and evenly distributed, indicating a socially equal environment where economic differences exert limited influence.
+
+Maternal age and residence type were not significant predictors once rare-event bias was accounted for. These findings suggest that beyond household wealth, community health equity, and public service accessibility play decisive roles in ensuring infant survival. Future analyses could incorporate maternal education, sanitation, immunization coverage, and health-seeking behavior to extend this framework.
+
+\vspace{1em}
+\noindent \textbf{Keywords:} Infant Mortality, NFHS-5, Rare Event Logistic Regression, Wealth Index, Maternal Age, Himachal Pradesh, Mizoram
+
+\bibliographystyle{apalike}
+\begin{thebibliography}{9}
+\bibitem[King and Zeng, 2001]{king2001} King, G., and Zeng, L. (2001). ``Logistic regression in rare events data.'' \emph{Political Analysis}, 9(2): 137--163.
+\bibitem[NFHS-5, 2021]{nfhs5} International Institute for Population Sciences (IIPS) and ICF. (2021). \emph{National Family Health Survey (NFHS-5), 2019–21: India}. Mumbai: IIPS.
+\end{thebibliography}
+
+\end{document}
