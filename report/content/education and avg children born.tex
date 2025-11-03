@@ -47,6 +47,47 @@ The key variables used in the analysis are defined as follows:
 \subsection{Average Number of Children Born vs Education Level of Individuals}
 Performed a Chi-square test of independence separately for Mizoram and Himachal Pradesh. Visualized associations using stacked box plots for both states.
 
+To test whether the mean number of children ever born differs across education levels, we assume the following fixed-effects one-way ANOVA model:
+
+\begin{equation}
+    Y_{ij} = \mu + \alpha_i + \varepsilon_{ij},
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $Y_{ij}$ = the $j^{th}$ observation of Children Ever Born in the $i^{th}$ education group,
+    \item $\mu$ = overall population mean,
+    \item $\alpha_i$ = effect of the $i^{th}$ education level (group effect),
+    \item $\varepsilon_{ij}$ = random error term with $\varepsilon_{ij} \sim N(0, \sigma^2)$.
+\end{itemize}
+
+The hypotheses for ANOVA are:
+\begin{align*}
+    H_0 &: \alpha_1 = \alpha_2 = \cdots = \alpha_k = 0 
+    && \text{(all education levels have equal mean fertility)} \\
+    H_1 &: \text{At least one } \alpha_i \neq 0
+    && \text{(mean fertility differs between groups)}.
+\end{align*}
+
+The total variation is divided as:
+\begin{equation}
+    SS_{\text{Total}} = SS_{\text{Between}} + SS_{\text{Within}},
+\end{equation}
+
+and the F-statistic is computed as:
+\begin{equation}
+    F = \frac{MS_{\text{Between}}}{MS_{\text{Within}}}
+    = \frac{SS_{\text{Between}}/(k - 1)}{SS_{\text{Within}}/(N - k)},
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $k$ = number of education groups,
+    \item $N$ = total number of observations.
+\end{itemize}
+
+If the computed $p$-value from the F-statistic is less than the significance level $\alpha = 0.05$, we reject the null hypothesis and conclude that education level has a significant effect on fertility.
+
 The following gives the box plot and the p values and F statistics for the two states:
 \begin{figure}[htb!]
 \centering
@@ -69,7 +110,7 @@ The following gives the contingency table and the chi squared statistics for the
 \caption{contingency table}
 \label{fig:anova}
 \end{figure}
-
+\newpage
 The heatmap of the distribution of sanitation access across education levels for both states is shown below:
 \begin{figure}[htb!]
 \centering

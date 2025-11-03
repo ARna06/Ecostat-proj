@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.27)  3 NOV 2025 23:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.27)  4 NOV 2025 00:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1199,7 +1199,7 @@ File: Images/orange1.jpg Graphic file (type bmp)
 <Images/orange1.jpg>
  (./main.lof
 Overfull \hbox (2.45386pt too wide) in paragraph at lines 8--8
-[]|\T1/pag/m/n/10 4.1| [][]Box plot and ANOVA re-sults for av-er-age num-ber of chil-dren born vs ed-u-ca-tion level[][]|     [][]24[][] 
+[]|\T1/pag/m/n/10 4.1| [][]Box plot and ANOVA re-sults for av-er-age num-ber of chil-dren born vs ed-u-ca-tion level[][]|     [][]25[][] 
  []
 
 )
@@ -1367,28 +1367,37 @@ Overfull \hbox (21.66745pt too wide) detected at line 43
   $\OML/ztmcm/m/it/10.95 S[] \OT1/ztmcm/m/n/10.95 = []$ 
  []
 
-File: Images/ANOVA Analysis.png Graphic file (type bmp)
-<Images/ANOVA Analysis.png>
 
 
 [24]
+File: Images/ANOVA Analysis.png Graphic file (type bmp)
+<Images/ANOVA Analysis.png>
+
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 File: Images/TWo state analysis.png Graphic file (type bmp)
 <Images/TWo state analysis.png>
+
+
+[25]
 File: Images/Plots.png Graphic file (type bmp)
 <Images/Plots.png>
 File: Images/state by sytate analysis.png Graphic file (type bmp)
 <Images/state by sytate analysis.png>
+
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 )
 
-[25]
-
 [26]
+
+[27]
+
+[28
+
+]
 Appendix A.
 File: Images/orange2.jpg Graphic file (type bmp)
 <Images/orange2.jpg>
@@ -1397,8 +1406,7 @@ File: Images/orange2.jpg Graphic file (type bmp)
 
 
 
-[27
-
+[29
 
 ] (./main.aux)
  ***********
@@ -1410,12 +1418,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33120 strings out of 468389
- 622060 string characters out of 5440620
- 1500683 words of memory out of 5000000
- 61081 multiletter control sequences out of 15000+600000
+ 33122 strings out of 468389
+ 622116 string characters out of 5440620
+ 1500677 words of memory out of 5000000
+ 61083 multiletter control sequences out of 15000+600000
  709478 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,12n,101p,1317b,847s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,13n,101p,1317b,847s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (27 pages).
+Output written on main.pdf (29 pages).
