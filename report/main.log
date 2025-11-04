@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.27)  4 NOV 2025 00:02
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.9.27)  4 NOV 2025 13:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1248,6 +1248,9 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 10
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+
 
 [11
 
@@ -1260,36 +1263,33 @@ Chapter 2.
 File: Images/orange2.jpg Graphic file (type bmp)
 <Images/orange2.jpg>
 (./content/Hypothesis.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-
 
 [13
 
 ]
 Missing character: There is no — ("2014) in font ptmr8t!
 
-Overfull \hbox (21.66745pt too wide) detected at line 77
+Overfull \hbox (21.66745pt too wide) detected at line 84
   $\OML/ztmcm/m/it/10.95 S[] \OT1/ztmcm/m/n/10.95 = []$ 
  []
 
 
-Overfull \hbox (6.48373pt too wide) in paragraph at lines 86--89
+Overfull \hbox (6.48373pt too wide) in paragraph at lines 93--96
 []$\OML/ztmcm/m/it/10.95 H[] \OT1/ztmcm/m/n/10.95 : \OML/ztmcm/m/it/10.95 ^^L[] \OT1/ztmcm/m/n/10.95 = 0  \OMS/ztmcm/m/n/10.95 )  \OML/ztmcm/m/it/10.95 E[][]\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 S[]\OT1/ztmcm/m/n/10.95 )[]$ 
  []
 
 
-Overfull \hbox (42.2357pt too wide) in paragraph at lines 89--92
+Overfull \hbox (42.2357pt too wide) in paragraph at lines 96--99
 []$\OML/ztmcm/m/it/10.95 H[] \OT1/ztmcm/m/n/10.95 : \OML/ztmcm/m/it/10.95 ^^L[] > \OT1/ztmcm/m/n/10.95 0  \OMS/ztmcm/m/n/10.95 )  []\OML/ztmcm/m/it/10.95 E[][]S[][]$ 
  []
 
 
-Overfull \hbox (45.10355pt too wide) in paragraph at lines 95--98
+Overfull \hbox (45.10355pt too wide) in paragraph at lines 102--105
 []$\OML/ztmcm/m/it/10.95 H[] \OT1/ztmcm/m/n/10.95 : \OML/ztmcm/m/it/10.95 ^^L[] \OT1/ztmcm/m/n/10.95 = 0  \OMS/ztmcm/m/n/10.95 )  \OML/ztmcm/m/it/10.95 E[][]\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 S[]\OT1/ztmcm/m/n/10.95 )[]$ 
  []
 
 
-Overfull \hbox (80.85551pt too wide) in paragraph at lines 98--101
+Overfull \hbox (80.85551pt too wide) in paragraph at lines 105--108
 []$\OML/ztmcm/m/it/10.95 H[] \OT1/ztmcm/m/n/10.95 : \OML/ztmcm/m/it/10.95 ^^L[] > \OT1/ztmcm/m/n/10.95 0  \OMS/ztmcm/m/n/10.95 )  []\OML/ztmcm/m/it/10.95 E[][]S[][]$ 
  []
 
@@ -1324,13 +1324,6 @@ File: Images/WhatsApp Image 2025-11-03 at 14.12.07.jpeg Graphic file (type bmp)
 <Images/WhatsApp Image 2025-11-03 at 14.12.07.jpeg>
 
 
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 26.08957pt, for example:
-(fancyhdr)                \setlength{\headheight}{26.08957pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-11.8632pt}.
-
 [20]
 File: Images/WhatsApp Image 2025-11-03 at 17.12.10.jpeg Graphic file (type bmp)
 <Images/WhatsApp Image 2025-11-03 at 17.12.10.jpeg>
@@ -1344,13 +1337,6 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [21])
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 26.08957pt, for example:
-(fancyhdr)                \setlength{\headheight}{26.08957pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-11.8632pt}.
 
 [22]
 Chapter 4.
@@ -1382,16 +1368,22 @@ File: Images/TWo state analysis.png Graphic file (type bmp)
 [25]
 File: Images/Plots.png Graphic file (type bmp)
 <Images/Plots.png>
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 File: Images/state by sytate analysis.png Graphic file (type bmp)
 <Images/state by sytate analysis.png>
 
+
+[26]
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 Missing character: There is no — ("2014) in font ptmr8t!
 )
-
-[26]
 
 [27]
 
@@ -1418,12 +1410,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33122 strings out of 468389
- 622116 string characters out of 5440620
- 1500680 words of memory out of 5000000
- 61083 multiletter control sequences out of 15000+600000
- 709478 words of font info for 122 fonts, out of 8000000 for 9000
+ 33183 strings out of 468389
+ 623437 string characters out of 5440620
+ 1498683 words of memory out of 5000000
+ 61144 multiletter control sequences out of 15000+600000
+ 717494 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,13n,101p,1317b,847s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,13n,101p,1045b,847s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (29 pages).

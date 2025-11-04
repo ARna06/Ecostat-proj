@@ -26,7 +26,7 @@ where $\mathbf{X}$ are controls (e.g., mother's age, education, residence).
 
 \subsection*{Test 2: Infant mortality vs Mother's age}
 
-\paragraph{Model / Test:} Compare IMR across maternal age categories (e.g., $<20$, $20$--$34$, $\ge 35$). Use logistic regression with age dummies or two-sample tests for proportions.
+\paragraph{Model / Test:} Compare IMR across maternal age categories (e.g., $<20$, $20$--$34$, $\ge 35$). Use logistic regression with age indicators or two-sample tests for proportions.
 
 \begin{itemize}
   \item \textbf{Mizoram}
@@ -41,11 +41,18 @@ where $\mathbf{X}$ are controls (e.g., mother's age, education, residence).
     \end{itemize}
 \end{itemize}
 
-\noindent\textit{Rationale:} Very young mothers face higher biological and socio-economic risks (e.g., poorer antenatal care), so infants of teen mothers often show worse outcomes. Test can be one-sided if theory is directional; include controls (education, wealth).
+\noindent\textit{Rationale:} \textit{Rationale:} 
+In many demographic studies, infant mortality follows a U-shaped relationship with maternal age, being higher for mothers younger than 20 years and those aged 35 years and above. However, in this study, the age group $\geq 35$ is not included as a separate category. This is because
+\begin{enumerate}[label=\roman*]
+  \item The number of births to mothers aged 35 and above in both Mizoram and Himachal Pradesh is relatively small, which may lead to statistically unreliable estimates,
+  \item The primary policy concern and observable variation in infant mortality lies between teenage mothers ($<20$ years) and mothers in the biologically safer range of 20--34 years.
+\end{enumerate}
+Therefore, a U-shaped association is not expected or tested; instead, the analysis focuses on whether infant mortality is significantly higher among mothers below 20 compared to those aged 20--34.
+
 
 \subsection*{Test 3: Residence type vs Infant mortality}
 
-\paragraph{Model / Test:} Compare proportions of infant deaths between rural and urban (Chi-square test of independence or logistic regression with residence dummy).
+\paragraph{Model / Test:} Compare proportions of infant deaths between rural and urban (Chi-square test of independence or logistic regression with suitable residence indicator).
 
 \begin{itemize}
   \item \textbf{Mizoram}
@@ -119,8 +126,8 @@ Educated mothers are more aware of hygiene, disease prevention, and government s
     \end{itemize}
   \item \textbf{Himachal Pradesh}
     \begin{itemize}
-      \item $H_{0}^{(HP)}:$ $\mathbb{E}[C|E=\text{levels}]$ equal across education levels.
-      \item $H_{A}^{(HP)}:$ $\mathbb{E}[C|E]$ declines with increasing education (negative association / monotonic trend).
+      \item $H_{0}^{(HP)}:$ $\mathbb{E}[C|E=\text{low}] = \mathbb{E}[C|E=\text{medium}] = \mathbb{E}[C|E=\text{high}]$ equal across education levels.
+      \item $H_{A}^{(HP)}:$ $\mathbb{E}[C|E=\text{low}] > \mathbb{E}[C|E=\text{medium}] > \mathbb{E}[C|E=\text{high}]$ declines with increasing education (negative association / monotonic trend).
     \end{itemize}
 \end{itemize}
 
@@ -129,8 +136,8 @@ Educated mothers are more aware of hygiene, disease prevention, and government s
 \subsection*{Notes on testing strategy and controls}
 
 \begin{itemize}
-  \item Prefer regression frameworks (logistic for binary child-level IMR, count models for fertility) with robust standard errors and relevant controls (wealth, residence, maternal age, parity, access to health facilities) to estimate partial associations.
-  \item Where hypotheses are directional (expecting a negative association), one-sided tests may be used — but two-sided tests are more conservative and commonly reported.
-  \item For group comparisons (age groups, education categories), supplement regression estimates with simple descriptive statistics (means, proportions) and visualisations (boxplots, bar charts).
-  \item Always report effect sizes (odds ratios, marginal effects, differences in means) with confidence intervals, not just $p$-values.
+  \item Prefer \textbf{regression frameworks} (logistic for binary child-level IMR, count models for fertility) with \textbf{robust standard errors and relevant controls} (wealth, residence, maternal age, parity, access to health facilities) to estimate partial associations.
+  \item Where \textbf{hypotheses are directional} (expecting a negative association), one-sided tests may be used — but two-sided tests are more conservative and commonly reported.
+  \item For \textbf{group comparisons} (age groups, education categories), supplement regression estimates with simple descriptive statistics (means, proportions) and visualisations (boxplots, bar charts).
+  \item Always \textbf{report effect sizes} (odds ratios, marginal effects, differences in means) with confidence intervals, not just $p$-values.
 \end{itemize}

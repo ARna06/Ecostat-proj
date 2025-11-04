@@ -97,7 +97,7 @@ The following gives the box plot and the p values and F statistics for the two s
 \end{figure}
 
 \paragraph{Verdict} The box plots indicate a clear negative association between mother's education level and the average number of children ever born in both Mizoram and Himachal Pradesh. As education level increases from no education to secondary or higher education, the median number of children born decreases significantly. The ANOVA results confirm this observation, with p-values less than 0.05 for both states, indicating that the differences in mean number of children born across education levels are statistically significant. This suggests that higher maternal education is associated with lower fertility rates, which may contribute to improved infant survival outcomes.
-
+\subsubsection*{Conclusion}
 In Himachal Pradesh, education seems more tightly linked to reproductive behavior — possibly due to stronger institutional and healthcare outreach. In Mizoram, though the trend is similar, cultural and structural factors may moderate the impact slightly. Hence, state-level policy tailoring is essential — Mizoram may need more community-level programs to translate education into family planning outcomes
 
 \subsection{Sanitation Access vs Education Level of Individuals}
@@ -112,18 +112,26 @@ The following gives the contingency table and the chi squared statistics for the
 \end{figure}
 \newpage
 The heatmap of the distribution of sanitation access across education levels for both states is shown below:
-\begin{figure}[htb!]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=0.7\textwidth]{Images/Plots.png}
 \caption{Heatmap of sanitation access vs education level}
 \label{fig:sanitation_heatmap}
 \end{figure}
+\begin{remark}
+    The codes (like 11, 12, $\ldots$ , 97) are categorical identifiers for each specific toilet facility type (for example: flush to sewer, flush to septic tank, pit latrine with slab, pit latrine without slab, no facility/open defecation, etc.). They allow the survey to capture a wide variety of facility types, including both improved and unimproved categories, and variations such as whether the facility is shared, whether it is located within the house/plot or outside, etc.
+\end{remark}
+
+
 The result of the test is given by the following table:
-\begin{figure}[htb!]
+\begin{figure}[!htb]
 \centering
-\includegraphics[width=\textwidth]{Images/state by sytate analysis.png}
+\includegraphics[width=0.8\textwidth]{Images/state by sytate analysis.png}
 \caption{Chi squared test results for both states}
 \label{fig:chi_squared}
 \end{figure}
 
-\paragraph{Verdict}The stacked bar charts clearly show that as education level increases, the proportion of households with adequate sanitation access increases notably. Lower education groups have visibly higher shares of poor sanitation facilities. Himachal Pradesh shows a stronger gradient — meaning the gap between low and high education groups is more pronounced than in Mizoram. Education influences sanitation behavior — better-educated individuals are more aware of hygiene, disease prevention, and sanitation benefits. This reflects the broader social development linkage — education translates into better health and environmental practices. The state-level comparison highlights that even with similar education levels, outcomes differ — implying that policy infrastructure and local awareness programs matter. Himachal Pradesh's stronger association suggests that its literacy programs and health infrastructure are effectively converting educational gains into improved sanitation outcomes. Mizoram, while performing well, may require more targeted hygiene education or rural sanitation outreach to fully realize the benefits of education on health behavior.
+\paragraph{Verdict}The stacked bar charts clearly show that as education level increases, the proportion of households with adequate sanitation access increases notably. Lower education groups have visibly higher shares of poor sanitation facilities. 
+
+\subsubsection*{Conclusion}
+Himachal Pradesh shows a stronger gradient — meaning the gap between low and high education groups is more pronounced than in Mizoram. Education influences sanitation behavior — better-educated individuals are more aware of hygiene, disease prevention, and sanitation benefits. This reflects the broader social development linkage — education translates into better health and environmental practices. The state-level comparison highlights that even with similar education levels, outcomes differ — implying that policy infrastructure and local awareness programs matter. Himachal Pradesh's stronger association suggests that its literacy programs and health infrastructure are effectively converting educational gains into improved sanitation outcomes. Mizoram, while performing well, may require more targeted hygiene education or rural sanitation outreach to fully realize the benefits of education on health behavior.
